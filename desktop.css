@@ -114,7 +114,6 @@ a {
 
 .home_part {
   width: 100%;
-  height: 100vh;
   background: url(./images/home_background_image.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -392,7 +391,8 @@ a {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 4%;
+  padding: 5%;
+  background-color: #272a31;
 }
 
 .logo_of_footer {
@@ -406,5 +406,163 @@ a {
 }
 
 .bottom_footer p {
+  color: #fff;
   width: 60%;
+}
+
+/* About Page */
+.about_container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.925);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  padding-top: 10%;
+}
+
+.about_header {
+  width: 70%;
+  display: block;
+  color: #ec5242;
+  font-size: 5vw;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.about_line {
+  width: 25px;
+  border-color: #ec53426c;
+}
+
+.about_description {
+  max-width: 80%;
+  font-size: 22px;
+  line-height: 150%;
+  padding: 40px;
+  margin: 15px 0 25px 0;
+  border: solid #fff;
+  color: #3e3e3e;
+  background-color: rgb(243, 243, 243);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about_email {
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.about_site {
+  text-align: center;
+}
+
+.logo_section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  border-top: solid #f1f1f1 2px;
+}
+
+.logo_title {
+  margin: 20px;
+}
+
+.logo_text {
+  margin: 20px;
+  width: 60%;
+  text-align: center;
+}
+
+.logo_container {
+  padding: 5%;
+  border: solid #d3d3d3 2px;
+  margin: 24px;
+}
+
+.list_of_partners {
+  display: none;
+}
+
+.logo {
+  width: 50vw;
+  max-width: 400px;
+}
+
+.previous_image_container {
+  display: flex;
+  justify-content: space-around;
+  min-width: 760px;
+  width: 60%;
+  margin: 48px 0;
+}
+
+.first_past_image {
+  width: 350px;
+  background-image: url(./images/2018_conference_image.webp);
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.second_past_image {
+  width: 350px;
+  background-image: url(./images/2020_conference_image.jpg);
+  background-size: cover;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.past_description {
+  font-size: 34px;
+  margin: 24px;
+}
+
+.about_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5%;
+  background-color: #272a31;
+}
+
+.about_footer p {
+  width: 60%;
+  color: #fff;
+}
+
+.about_logo {
+  display: inline-block;
+  width: 30%;
+  height: 34px;
+  background-image: url(./assets/icons/biotech_logo_white.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 40px;
+}
+
+.headline_about {
+  display: none;
+}
+
+.two {
+  display: none;
+}
+
+.about_partners_container {
+  display: none;
 }

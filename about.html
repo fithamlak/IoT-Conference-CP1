@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 768px)" href="./mobile.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 769px)" href="./desktop.css">
     <title>about</title>
 </head>
 <body>
+    <header>
+        <div class="top_header">
+            <ul class="top_header_list">
+                <li class="top_list_li"> <i class="facebook_icon_top"></i> </li>
+                <li class="top_list_li"> <i class="twitter_icon_top"></i> </li>
+                <li class="top_list_li"> <a class="top_list_link" href="">English</a> </li>
+                <li class="top_list_li"> <a class="top_list_link" href="">My Page</a> </li>
+                <li class="top_list_li"> <a class="top_list_link" href="">Logout</a> </li>
+            </ul>
+        </div>
+
+        <nav class="nav_bar">
+            <a href="#"><figure class="nav_image"></figure></a>
+            <ul class="nav_bar_list">
+                <li class="nav_list_li"><a class="nav_list_link" href="about.html">About</a></li>
+                <li class="nav_list_li"><a class="nav_list_link" href="#program">Program</a></li>
+                <li class="nav_list_li"><a class="nav_list_link" href="#speakers">Speakers</a></li>
+                <li class="nav_list_li"><a class="nav_list_link" href="#partners">Sponsors</a></li>
+                <li class="nav_list_li"><a class="nav_list_link register" href="">Register</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section class="home_part">
             <nav class="mobile_nav_bar">
@@ -46,7 +69,7 @@
             </div>
         </section>
     </main>
-    <footer id="footer_partners">
+    <footer id=" footer_partners">
         <div class="list_of_partners">
             <h2 class="progam_section_header">Partners</h2>
             <hr class="program_underline">
