@@ -3,14 +3,39 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 768px)" href="./mobile.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 769px)" href="./desktop.css">
     <title>IoT Summit</title>
 </head>
 <body>
+    <header>
+        <div class="top_header">
+            <ul class="top_header_list">
+                <li class="top_list_li"> <i class="facebook_icon_top"></i> </li>
+                <li class="top_list_li"> <i class="twitter_icon_top"></i> </li>
+                <li class="top_list_li"> <a class="top_list_link" href="">English</a> </li>
+                <li class="top_list_li"> <a class="top_list_link" href="">My Page</a> </li>
+                <li class="top_list_li"> <a class="top_list_link" href="">Logout</a> </li>
+            </ul>
+        </div>
+
+        <nav class="nav_bar">
+            <a href="#"><figure class="nav_image"></figure></a>
+            <ul class="nav_bar_list">
+                <li class="nav_list_li"><a class="nav_list_link" href="about.html">About</a></li>
+                <li class="nav_list_li"><a class="nav_list_link" href="#program">Program</a></li>
+                <li class="nav_list_li"><a class="nav_list_link" href="#speakers">Speakers</a></li>
+                <li class="nav_list_li"><a class="nav_list_link" href="#partners">Sponsors</a></li>
+                <li class="nav_list_li"><a class="nav_list_link register" href="">Register</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section class="home_part"  id="home">
             <nav class="mobile_nav_bar">
                 <img class="hamburger_icon" src="./images/hamburger_icon.png" alt="hamburger menu" href=""></img>
+                <img class="close_icon inactive" src="" alt="close icon"></img>
+                <img class="mobile_icon inactive" src="" alt="close icon"></img>
             </nav>
             <div class="Introduction_section">
                 <h2 class="first_headline">"Hello! IoT (Internet of things) enthusiasts"</h2>
@@ -21,7 +46,7 @@
             </div>
         </section>
         <section class="program_section" id="program">
-            <h2 class="progam_section_header">Main Program</h2>
+            <h2 class="progam_sections_header">Main Program</h2>
             <hr class="program_underline">
             <div class="program_container">
                 <div class="program_container_content">
@@ -50,10 +75,11 @@
                     <p class="program_description">Take advantage of this place full of experts in the IoT field, say hi, make new contacts and expand your professional net.</p>
                 </div>
             </div>
-            <p class="program_section_footer">Join IoT World Summit 2023</p>
+            <p class="program_section_footer">SEE THE WHOLE PROGRAM</p>
+            <p class="program_section_footer_mobile">Join IoT World Summit 2023</p>
         </section>   
             <section class="speakers_section">
-                <h2 class="speakers-section-header"> Featured Speakers</h2>
+                <h2 class="speakers-sections-header"> Featured Speakers</h2>
                 <hr class="speakers_underline">
                 <div class="speakers_container">
                     <div class="speaker">
@@ -68,8 +94,6 @@
                             <p class="speaker_description">Simon J. Anderson is an international futurist speaker and emerging technology and trends consultant.</p>
                         </div>
                     </div>
-                </div>
-                <div class="speakers_container">
                     <div class="speaker">
                         <div class="speaker_image_container">
                             <img class="speaker_background" src="./images/iot.webp">
@@ -82,8 +106,6 @@
                             <p class="speaker_description">A leading technology forecaster and strategist, Daniel Burrus has established an international reputation for accurately predicting the future of technological change and its direct impact on the business world.</p>
                         </div>
                     </div>
-                </div>
-                <div class="speakers_container">
                     <div class="speaker">
                         <div class="speaker_image_container">
                             <img class="speaker_background" src="./images/iot.webp">
@@ -96,8 +118,6 @@
                             <p class="speaker_description">Currently, Adam Cheyer is co-Founder and VP Engineering of Viv Labs, a startup simplifying the world by providing an intelligent interface to everything.</p>
                         </div>
                     </div>
-                </div>
-                <div class="speakers_container">
                     <div class="speaker">
                         <div class="speaker_image_container">
                             <img class="speaker_background" src="./images/iot.webp">
@@ -110,8 +130,6 @@
                             <p class="speaker_description">Dr. Shawn DuBravac is author of the New York Times Best Seller Digital Destiny: How the New Age of Data Will Transform the Way We Work, Live, and Communicate.</p>
                         </div>
                     </div>
-                </div>
-                <div class="speakers_container">
                     <div class="speaker">
                         <div class="speaker_image_container">
                             <img class="speaker_background" src="./images/iot.webp">
@@ -124,8 +142,6 @@
                             <p class="speaker_description">Nikki Greenberg is a world-leading futurist and innovation strategist, focused on preparing organizations for a tech-enabled future.</p>
                         </div>
                     </div>
-                </div>
-                <div class="speakers_container">
                     <div class="speaker">
                         <div class="speaker_image_container">
                             <img class="speaker_background" src="./images/iot.webp">
@@ -138,11 +154,11 @@
                             <p class="speaker_description">Jessica Groopman is Founding Partner & Industry Analyst at Kaleido Insights, a boutique research and advisory firm analyzing the impacts of emerging technologies on people, businesses, and society.</p>
                         </div>
                     </div>
-                </div>
+                </div>    
             </section>
         </section>
         <!-- footer -->
-        <footer id="footer_partners">
+        <footer id="footer_partners partners_container">
             <div class="list_of_partners">
                 <h2 class="progam_section_header">Partners</h2>
                 <hr class="program_underline">

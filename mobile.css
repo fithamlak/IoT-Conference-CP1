@@ -1,5 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0 6px 12px 4px rgba(0, 0, 0, 0.18);
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mobile_nav_bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  background-color: rgba(255, 255, 255, 0.925);
+}
+
+.hamburger_icon {
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  position: fixed;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.close_icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  z-index: 99;
+  position: fixed;
+  cursor: pointer;
+}
+
+.mobile_icon {
+  display: inline-block;
+  height: 30px;
+  z-index: 99;
+  position: fixed;
+  right: 5%;
+  cursor: pointer;
+}
+
+.inactive {
+  display: none;
+}
+
+.invisible {
+  display: none;
+}
+
+.nav_bar_list_m {
+  position: fixed;
+  left: 0;
+  top: 0;
+  list-style: none;
+  width: 100%;
+  max-width: 500px;
+  height: 100vh;
+  background-color: #272a31;
+  opacity: 0.99;
+  text-align: left;
+  padding: 10%;
+  font-size: 40px;
+  line-height: 70px;
+  padding-top: 100px;
+  z-index: 98;
+}
+
+.nav_list_li_m {
+  margin-top: 30px;
+}
+
+.nav_li {
+  color: #ec5242;
+  font-weight: 400;
+}
+
+.nav_li:hover {
+  color: #fff;
+  font-weight: 400;
+}
+
 .home_part {
   width: 100%;
   height: auto;
@@ -57,22 +144,6 @@
   color: #3e3e3e;
 }
 
-.mobile_nav_bar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.925);
-  padding: 5%;
-}
-
-.hamburger_icon {
-  height: 22px;
-  position: fixed;
-  z-index: 99;
-  display: inline-block;
-  width: 25px;
-}
-
 .program_section {
   width: 100%;
   max-height: 1200px;
@@ -83,7 +154,7 @@
   align-items: center;
 }
 
-.progam_section_header {
+.progam_sections_header {
   text-align: center;
   margin-top: 28px;
   color: #fff;
@@ -180,6 +251,10 @@
 }
 
 .program_section_footer {
+  display: none;
+}
+
+.program_section_footer_mobile {
   color: #fff;
   background-color: #ec5242;
   padding: 7%;
