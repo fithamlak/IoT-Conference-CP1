@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+.home_part {
+    width: 100%;
+    height: auto;
+  }
+  
+  .Introduction_section {
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.925);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4.5%;
+    padding-top: 60px;
+  }
+
+  .first_headline {
+    font-size: 4vw;
+    font-weight: 400;
+    color: #eb5234;
+  }
+  
+  .second_headline {
+    font-weight: 900;
+    display: block;
+    background-image: url('./images/Introduction_background.jpg');
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 8vw;
+  }
+  
+  .text {
+    margin: 15px 0 25px 0;
+    border: solid #fff;
+    color: #3e3e3e;
+    background-color: #f7f7f7;
+    width: 100%;
+    max-width: 500px;
+    font-size: 16px;
+    padding: 2%;
+    
+  }
+  
+  .date {
+    font-weight: 900;
+    color: #3e3e3e;
+    font-size: 3vw;
+    margin-bottom: 10px;
+  }
+  
+  .site {
+    margin-bottom: 50px;
+    color: #3e3e3e;
+  }
+
+  .mobile_nav_bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.925);
+    padding: 5%;
+  }
+  
+  .hamburger_icon {
+    height: 22px;
+    position: fixed;
+    z-index: 99;
+    display: inline-block;
+    width: 25px;
+  }
