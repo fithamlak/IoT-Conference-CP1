@@ -106,10 +106,10 @@ a {
   display: inline-block;
   background-position: center;
   background-repeat: no-repeat;
-  margin-left: 50px;
+  margin-left: 60px;
   width: 198px;
-  height: 34px;
-  background-image: url(./images/mylog1.PNG);
+  height: 50px;
+  background-image: url(./images/myLogo.PNG);
 }
 
 .home_part {
@@ -403,16 +403,16 @@ a {
   flex-wrap: wrap;
   width: 100%;
   padding: 5%;
+  height: 100px;
 }
 
 .logo_of_footer {
   display: inline-block;
   width: 30%;
-  height: 34px;
-  background-image: url(./images/mylog1.PNG);
+  height: 50px;
+  background-image: url(./images/myLogo.PNG);
   background-position: center;
   background-repeat: no-repeat;
-  margin-right: 40px;
 }
 
 .bottom_footer_home p {
@@ -545,29 +545,9 @@ a {
   margin: 24px;
 }
 
-.about_footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 5%;
-  background-color: #272a31;
-}
-
 .about_footer p {
   width: 60%;
   color: #fff;
-}
-
-.about_logo {
-  display: inline-block;
-  width: 30%;
-  height: 34px;
-  background-image: url(./assets/icons/biotech_logo_white.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 40px;
 }
 
 .headline_about {
