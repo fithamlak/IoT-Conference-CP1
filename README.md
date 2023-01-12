@@ -101,7 +101,7 @@ In order to run this project you need: any functional browser.
 ### Setup
 
 Clone this repository to your desired folder:
-cd my-folder git clone [@jmonto55](https://github.com/fithamlak/IoT-Conference-CP1.git)
+cd my-folder git clone [@fithamlak](https://github.com/fithamlak/IoT-Conference-CP1.git)
 
 ### Install
 
@@ -184,7 +184,7 @@ I would like to thank Microverse team for the information provided and [Cindy Sh
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
