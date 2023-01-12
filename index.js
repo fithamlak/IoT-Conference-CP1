@@ -37,7 +37,7 @@ const speakersData = [
     name: 'Daniel Burrus',
     title: 'Futurist, Technology Strategist, and Trends Forecaster',
     description: 'A leading technology forecaster and strategist, Daniel Burrus has established an international reputation for accurately predicting the future of technological change and its direct impact on the business world.',
-    photo: '"./images/second_speaker.jpg"',
+    photo: './images/second_speaker.jpg',
   },
 
   {
@@ -69,3 +69,84 @@ const speakersData = [
   },
 
 ];
+
+// dynamic page for featured-speaakers section
+
+// access speakers section in html dom
+
+const dynamicSection = document.querySelector('.speakers_section');
+
+// create section title
+
+const speakerSectionTitle = document.createElement('h2');
+speakerSectionTitle.innerText = 'Featured Speakers';
+speakerSectionTitle.className = 'speakers-sections-header';
+dynamicSection.append(speakerSectionTitle);
+
+// create horizontal line under section title
+
+const speakersLine = document.createElement('hr');
+speakersLine.classList.add('speakers_underline');
+dynamicSection.append(speakersLine);
+
+// create container to hold all speakers inside
+
+const speakersContainer = document.createElement('div');
+speakersContainer.className = 'speakers_container';
+dynamicSection.append(speakersContainer);
+
+// create all speakers in the same way iside the forloop
+
+for (let k = 0; k < speakersData.length; k += 1) {
+  // creat container for each individual speaker
+  const speaker = document.createElement('div');
+  speaker.classList.add('speaker');
+
+  // create image container for each individual photo
+  const speakerImgContainer = document.createElement('div');
+  speakerImgContainer.classList.add('speaker_img_container');
+  speaker.append(speakerImgContainer);
+
+  // create background and append inside image container for each speaker
+  const speakerBackground = document.createElement('img');
+  speakerBackground.classList.add('speaker_background');
+  speakerBackground.src = './images/iot.webp';
+  speakerImgContainer.append(speakerBackground);
+
+  // create photo ind append inside imagecontainer for each speakers
+  const speakerPhoto = document.createElement('img');
+  speakerPhoto.classList.add('speaker_image');
+  speakerPhoto.src = speakersData[k].photo;
+  speakerImgContainer.append(speakerPhoto);
+
+  // creat container to hold all datas of
+  // the speaker other than photo, like name, title, and description
+  const speakerInfo = document.createElement('div');
+  speakerInfo.classList.add('speaker_data');
+  speaker.append(speakerInfo);
+
+  // create h2 element for name of the speaker
+  const speakerName = document.createElement('h2');
+  speakerName.classList.add('speaker_name');
+  speakerName.innerText = speakersData[k].name;
+  speakerInfo.append(speakerName);
+
+  // create h3 element for title of the speaker
+  const speakerTitle = document.createElement('h3');
+  speakerTitle.classList.add('speaker_title');
+  speakerTitle.innerText = speakersData[k].title;
+  speakerInfo.append(speakerTitle);
+
+  // create horizontal line under title
+  const speakerLine = document.createElement('hr');
+  speakerLine.classList.add('speaker_underline');
+  speakerInfo.append(speakerLine);
+
+  // create p element for description of the speaker
+  const speakerText = document.createElement('p');
+  speakerText.classList.add('speaker_description');
+  speakerText.innerText = speakersData[k].description;
+  speakerInfo.append(speakerText);
+
+  speakersContainer.append(speaker);
+}
