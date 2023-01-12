@@ -84,7 +84,7 @@ This project is for an IoT conference web where you can see all the information 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://fithamlak.github.io/)
+- [Live Demo Link](https://fithamlak.github.io/IoT-Conference-CP1/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
