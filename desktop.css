@@ -24,7 +24,7 @@ a {
   text-decoration: none;
 }
 
-.mobile_nav_bar {
+.mobile_popup {
   display: none;
 }
 
@@ -179,7 +179,7 @@ a {
   align-items: center;
 }
 
-.progam_section_header {
+.progam_sections_header {
   color: #fff;
   width: 160px;
   padding-bottom: 10px;
@@ -187,9 +187,10 @@ a {
   margin-top: 28px;
 }
 
-.program_undrline {
+.program_underline {
   width: 30px;
   border-color: #ec5242;
+  margin-top: 0;
 }
 
 .program_container {

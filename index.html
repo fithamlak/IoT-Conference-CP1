@@ -25,17 +25,26 @@
                 <li class="nav_list_li"><a class="nav_list_link" href="about.html">About</a></li>
                 <li class="nav_list_li"><a class="nav_list_link" href="#program">Program</a></li>
                 <li class="nav_list_li"><a class="nav_list_link" href="#speakers">Speakers</a></li>
-                <li class="nav_list_li"><a class="nav_list_link" href="#partners">Sponsors</a></li>
+                <li class="nav_list_li"><a class="nav_list_link" href="#footer_partners">Sponsors</a></li>
                 <li class="nav_list_li"><a class="nav_list_link register" href="">Register</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="home_part"  id="home">
-            <nav class="mobile_nav_bar">
+            <nav class="mobile_popup">
                 <img class="hamburger_icon" src="./images/hamburger_icon.png" alt="hamburger menu" href=""></img>
-                <img class="close_icon inactive" src="" alt="close icon"></img>
-                <img class="mobile_icon inactive" src="" alt="close icon"></img>
+                <img class="close_icon inactive" src="./images/close_icon.svg" alt="close icon"></img>
+                <ul class="popup_menu inactive">
+                    <li class="popup_list"><a class="about_link nav_li" href="about.html">About</a></li>
+                    <hr class="speaker_line">
+                    <li class="popup_list"><a class="prgram_link nav_li" href="#program">Program</a></li>
+                    <hr class="speaker_line">
+                    <li class="popup_list"><a class="speakers_link nav_li" href="#speakers">Speakers</a></li>
+                    <hr class="speaker_line">
+                    <li class="popup_list"><a class="partners_link nav_li" href="#footer_partners">Sponsors</a></li>
+                    <hr class="speaker_line">
+                </ul>
             </nav>
             <div class="Introduction_section">
                 <h2 class="first_headline">"Hello! IoT (Internet of things) enthusiasts"</h2>
@@ -78,103 +87,104 @@
             <p class="program_section_footer">SEE THE WHOLE PROGRAM</p>
             <p class="program_section_footer_mobile">Join IoT World Summit 2023</p>
         </section>   
-            <section class="speakers_section">
-                <h2 class="speakers-sections-header"> Featured Speakers</h2>
-                <hr class="speakers_underline">
-                <div class="speakers_container">
-                    <div class="speaker">
-                        <div class="speaker_image_container">
-                            <img class="speaker_background" src="./images/iot.webp">
-                            <img class="speaker_image" src="./images/first_speaker.jpg">
-                        </div>
-                        <div class="speaker_data">
-                            <h2 class="speaker_name">Simon Anderson</h2>
-                            <h3 class="speaker_title">International Futurist Speaker and Strategic Foresight Consultant</h3>
-                            <hr class="speaker_underline">
-                            <p class="speaker_description">Simon J. Anderson is an international futurist speaker and emerging technology and trends consultant.</p>
-                        </div>
+        <section class="speakers_section" id="speakers" >
+            <h2 class="speakers-sections-header"> Featured Speakers</h2>
+            <hr class="speakers_underline">
+            <div class="speakers_container">
+                <div class="speaker">
+                    <div class="speaker_image_container">
+                        <img class="speaker_background" src="./images/iot.webp">
+                        <img class="speaker_image" src="./images/first_speaker.jpg">
                     </div>
-                    <div class="speaker">
-                        <div class="speaker_image_container">
-                            <img class="speaker_background" src="./images/iot.webp">
-                            <img class="speaker_image" src="./images/second_speaker.jpg">
-                        </div>
-                        <div class="speaker_data">
+                    <div class="speaker_data">
+                        <h2 class="speaker_name">Simon Anderson</h2>
+                        <h3 class="speaker_title">International Futurist Speaker and Strategic Foresight Consultant</h3>
+                        <hr class="speaker_underline">
+                        <p class="speaker_description">Simon J. Anderson is an international futurist speaker and emerging technology and trends consultant.</p>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <div class="speaker_image_container">
+                        <img class="speaker_background" src="./images/iot.webp">
+                        <img class="speaker_image" src="./images/second_speaker.jpg">
+                    </div>
+                    <div class="speaker_data">
                             <h2 class="speaker_name">Daniel Burrus</h2>
                             <h3 class="speaker_title">Futurist, Technology Strategist, and Trends Forecaster</h3>
                             <hr class="speaker_underline">
                             <p class="speaker_description">A leading technology forecaster and strategist, Daniel Burrus has established an international reputation for accurately predicting the future of technological change and its direct impact on the business world.</p>
-                        </div>
                     </div>
-                    <div class="speaker">
-                        <div class="speaker_image_container">
-                            <img class="speaker_background" src="./images/iot.webp">
-                            <img class="speaker_image" src="./images/third_speaker.jpg">
-                        </div>
-                        <div class="speaker_data">
-                            <h2 class="speaker_name">Adam Cheyer</h2>
-                            <h3 class="speaker_title">Top Technology and AI Speakert</h3>
-                            <hr class="speaker_underline">
-                            <p class="speaker_description">Currently, Adam Cheyer is co-Founder and VP Engineering of Viv Labs, a startup simplifying the world by providing an intelligent interface to everything.</p>
-                        </div>
+                </div> 
+                <div class="speaker">
+                   <div class="speaker_image_container">
+                        <img class="speaker_background" src="./images/iot.webp">
+                        <img class="speaker_image" src="./images/third_speaker.jpg">
                     </div>
-                    <div class="speaker">
-                        <div class="speaker_image_container">
-                            <img class="speaker_background" src="./images/iot.webp">
-                            <img class="speaker_image" src="./images/fourth_speaker.jpg">
-                        </div>
-                        <div class="speaker_data">
-                            <h2 class="speaker_name">Shawn DuBravac</h2>
-                            <h3 class="speaker_title">Global Futurist and Trendsetter</h3>
-                            <hr class="speaker_underline">
-                            <p class="speaker_description">Dr. Shawn DuBravac is author of the New York Times Best Seller Digital Destiny: How the New Age of Data Will Transform the Way We Work, Live, and Communicate.</p>
-                        </div>
+                    <div class="speaker_data">
+                        <h2 class="speaker_name">Adam Cheyer</h2>
+                        <h3 class="speaker_title">Top Technology and AI Speakert</h3>
+                        <hr class="speaker_underline">
+                        <p class="speaker_description">Currently, Adam Cheyer is co-Founder and VP Engineering of Viv Labs, a startup simplifying the world by providing an intelligent interface to everything.</p>
                     </div>
-                    <div class="speaker">
-                        <div class="speaker_image_container">
-                            <img class="speaker_background" src="./images/iot.webp">
-                            <img class="speaker_image" src="./images/fifth_speaker.jpg">
-                        </div>
-                        <div class="speaker_data">
-                            <h2 class="speaker_name">Nikki Greenberg</h2>
-                            <h3 class="speaker_title">World Leading Futurist</h3>
-                            <hr class="speaker_underline">
-                            <p class="speaker_description">Nikki Greenberg is a world-leading futurist and innovation strategist, focused on preparing organizations for a tech-enabled future.</p>
-                        </div>
-                    </div>
-                    <div class="speaker">
-                        <div class="speaker_image_container">
-                            <img class="speaker_background" src="./images/iot.webp">
-                            <img class="speaker_image" src="./images/sixth_speaker.jpg">
-                        </div>
-                        <div class="speaker_data">
-                            <h2 class="speaker_name">Jessica Groopman</h2>
-                            <h3 class="speaker_title">Industry Analyst & Founding Partner, Kaleido Insights</h3>
-                            <hr class="speaker_underline">
-                            <p class="speaker_description">Jessica Groopman is Founding Partner & Industry Analyst at Kaleido Insights, a boutique research and advisory firm analyzing the impacts of emerging technologies on people, businesses, and society.</p>
-                        </div>
-                    </div>
-                </div>    
-            </section>
-        </section>
-        <!-- footer -->
-        <footer id="footer_partners partners_container">
-            <div class="list_of_partners">
-                <h2 class="progam_section_header">Partners</h2>
-                <hr class="program_underline">
-                <div class="partners">
-                    <img class="partners_logo" src="./images/partner-1.webp" alt="logo of samsara"></img>
-                    <img class="partners_logo" src="./images/partner-2.webp" alt="logo of vates"></img>
-                    <img class="partners_logo" src="./images/partner_3.png" alt="logo of bitcoin"></img>
-                    <img class="partners_logo" src="./images/partner-4.webp" alt="logo of oxagile"></img>
-                    <img class="partners_logo" src="./images/partner-5.webp" alt="logo of verizon"></img>
-                    <img class="partners_logo" src="./images/partner_6.png" alt="logo of google"></i>
                 </div>
+                <div class="speaker">
+                    <div class="speaker_image_container">
+                        <img class="speaker_background" src="./images/iot.webp">
+                        <img class="speaker_image" src="./images/fourth_speaker.jpg">
+                    </div>
+                    <div class="speaker_data">
+                        <h2 class="speaker_name">Shawn DuBravac</h2>
+                        <h3 class="speaker_title">Global Futurist and Trendsetter</h3>
+                        <hr class="speaker_underline">
+                        <p class="speaker_description">Dr. Shawn DuBravac is author of the New York Times Best Seller Digital Destiny: How the New Age of Data Will Transform the Way We Work, Live, and Communicate.</p>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <div class="speaker_image_container">
+                        <img class="speaker_background" src="./images/iot.webp">
+                        <img class="speaker_image" src="./images/fifth_speaker.jpg">
+                    </div>
+                    <div class="speaker_data">
+                        <h2 class="speaker_name">Nikki Greenberg</h2>
+                        <h3 class="speaker_title">World Leading Futurist</h3>
+                        <hr class="speaker_underline">
+                        <p class="speaker_description">Nikki Greenberg is a world-leading futurist and innovation strategist, focused on preparing organizations for a tech-enabled future.</p>
+                    </div>
+                </div>
+                <div class="speaker">
+                    <div class="speaker_image_container">
+                        <img class="speaker_background" src="./images/iot.webp">
+                        <img class="speaker_image" src="./images/sixth_speaker.jpg">
+                    </div>
+                    <div class="speaker_data">
+                        <h2 class="speaker_name">Jessica Groopman</h2>
+                        <h3 class="speaker_title">Industry Analyst & Founding Partner, Kaleido Insights</h3>
+                        <hr class="speaker_underline">
+                        <p class="speaker_description">Jessica Groopman is Founding Partner & Industry Analyst at Kaleido Insights, a boutique research and advisory firm analyzing the impacts of emerging technologies on people, businesses, and society.</p>
+                    </div>
+                </div>
+            </div>    
+        </section>
+    </main>
+    <!-- footer -->
+    <footer id="footer_partners">
+        <div class="partners_container">
+            <h2 class="progam_sections_header">Partners</h2>
+            <hr class="program_underline">
+            <div class="partners">
+                <img class="partners_logo" src="./images/partner-1.webp" alt="logo of samsara"></img>
+                <img class="partners_logo" src="./images/partner-2.webp" alt="logo of vates"></img>
+                <img class="partners_logo" src="./images/partner_3.png" alt="logo of bitcoin"></img>
+                <img class="partners_logo" src="./images/partner-4.webp" alt="logo of oxagile"></img>
+                <img class="partners_logo" src="./images/partner-5.webp" alt="logo of verizon"></img>
+                <img class="partners_logo" src="./images/partner_6.png" alt="logo of google"></i>
             </div>
-            <div class="bottom_footer">
-                <figure class="logo_of_footer"></figure>
-                <p>2023 World Internet of Things Summit. All Rights Reserved. World Internet of things Summit is part of a global IoT organization.</p>
-            </div>
-        </footer>
+        </div>
+        <div class="bottom_footer">
+            <figure class="logo_of_footer"></figure>
+            <p>2023 World Internet of Things Summit. All Rights Reserved. World Internet of things Summit is part of a global IoT organization.</p>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
 </body>
 </html>

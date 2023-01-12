@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
+* {
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 header {
   width: 100%;
   position: fixed;
@@ -12,7 +20,7 @@ a {
   text-decoration: none;
 }
 
-.mobile_nav_bar {
+.mobile_popup {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -26,7 +34,6 @@ a {
   height: 22px;
   position: fixed;
   z-index: 99;
-  cursor: pointer;
 }
 
 .close_icon {
@@ -38,24 +45,11 @@ a {
   cursor: pointer;
 }
 
-.mobile_icon {
-  display: inline-block;
-  height: 30px;
-  z-index: 99;
-  position: fixed;
-  right: 5%;
-  cursor: pointer;
-}
-
 .inactive {
   display: none;
 }
 
-.invisible {
-  display: none;
-}
-
-.nav_bar_list_m {
+.popup_menu {
   position: fixed;
   left: 0;
   top: 0;
@@ -73,7 +67,7 @@ a {
   z-index: 98;
 }
 
-.nav_list_li_m {
+.popup_list {
   margin-top: 30px;
 }
 
@@ -347,7 +341,7 @@ a {
   font-size: 13px;
 }
 
-.list_of_partners {
+.partners_container {
   padding: 0 9px;
   width: 100%;
   height: auto;
