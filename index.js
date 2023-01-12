@@ -99,7 +99,7 @@ dynamicSection.append(speakersContainer);
 
 for (let k = 0; k < speakersData.length; k += 1) {
   // creat container for each individual speaker
-  const speaker = document.createElement('div');
+  const speaker = document.createElement('article');
   speaker.classList.add('speaker');
 
   // create image container for each individual photo
