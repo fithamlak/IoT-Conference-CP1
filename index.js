@@ -104,7 +104,7 @@ for (let k = 0; k < speakersData.length; k += 1) {
 
   // create image container for each individual photo
   const speakerImgContainer = document.createElement('div');
-  speakerImgContainer.classList.add('speaker_img_container');
+  speakerImgContainer.classList.add('speaker_image_container');
   speaker.append(speakerImgContainer);
 
   // create background and append inside image container for each speaker
