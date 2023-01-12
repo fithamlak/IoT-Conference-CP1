@@ -4,18 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 768px)" href="./mobile.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 769px)" href="./desktop.css">
     <title>about</title>
 </head>
 <body>
+    <header>
+        <div class="top_header">
+            <ul class="top_header_list">
+                <li class="top_list_li"> <i class="facebook_icon_top"></i> </li>
+                <li class="top_list_li"> <i class="twitter_icon_top"></i> </li>
+                <li class="top_list_li"> <a class="top_list_link" href="">English</a> </li>
+                <li class="top_list_li"> <a class="top_list_link" href="">My Page</a> </li>
+                <li class="top_list_li"> <a class="top_list_link" href="">Logout</a> </li>
+            </ul>
+        </div>
+
+        <nav class="nav_bar">
+            <a href="index.html"><figure class="nav_image"></figure></a>
+            <ul class="nav_bar_list">
+                <li class="nav_list_li"><a class="nav_list_link" href="#">About</a></li>
+                <li class="nav_list_li"><a class="nav_list_link" href="index.html#program">Program</a></li>
+                <li class="nav_list_li"><a class="nav_list_link" href="index.html#speakers">Speakers</a></li>
+                <li class="nav_list_li"><a class="nav_list_link" href="index.html#footer_partners">Sponsors</a></li>
+                <li class="nav_list_li"><a class="nav_list_link register" href="">Register</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section class="home_part">
-            <nav class="mobile_nav_bar">
-                <img class="hamburger_icon" src="./images/hamburger_icon.png" alt="hamburger menu" href=""></img>
+            <nav class="mobile_popup">
+                    <img class="hamburger_icon" src="./images/hamburger_icon.png" alt="hamburger menu" href=""></img>
+                    <img class="close_icon inactive" src="./images/close_icon.svg" alt="close icon"></img>
+                    <ul class="popup_menu inactive">
+                        <li class="popup_list"><a class= "about_link nav_li" href="index.html">home</a></li>
+                        <li><hr class="speaker_line"></li>
+                        <li class="popup_list"><a class="prgram_link nav_li" href="index.html#program">Program</a></li>
+                        <li><hr class="speaker_line"></li>
+                        <li class="popup_list"><a class="speakers_link nav_li" href="index.html#speakers">Speakers</a></li>
+                        <li><hr class="speaker_line"></li>
+                        <li class="popup_list"><a class="partners_link nav_li" href="index.html#footer_partners">Sponsors</a></li>
+                        <li><hr class="speaker_line"></li>
+                    </ul>
             </nav>
             <div class="about_container">
-                <h2 class="headline_about">"Hello! IoT enthusiasts"</h2>
-                <title class="about_header">WORLD INTERNET OF THINGS CONFERENCE 2023</title>
+                <p class="headline_about">"Hello! IoT enthusiasts"</p>
+                <h1 class="about_header">WORLD INTERNET OF THINGS CONFERENCE 2023</h1>
                 <hr class="about_line">
                 <p class="about_description">A casual scientific meeting to discuss the future of the internet of things field with speechs from more than 27 countries is taking place in October, In Addis Abab.</p>
                 <p class="about_site">Please contact us via Email for any further questions about World internet of things Conference 2023!</p>
@@ -27,7 +61,7 @@
             <hr class="about_line">
             <p class="logo_text">The world internet of things conference 2023 logo was choosen in 2022.</p>
             <div class="logo_container">
-                <img class="logo" src="./images/mylog1.PNG" alt="Logo">
+                <img class="logo" src="./images/myLogo.PNG" alt="Logo">
             </div>
         </section>
         <section class="logo_section">
@@ -46,9 +80,9 @@
             </div>
         </section>
     </main>
-    <footer id="footer_partners">
+    <footer id=" footer_partners about_container-footer">
         <div class="list_of_partners">
-            <h2 class="progam_section_header">Partners</h2>
+            <h2 class="progam_sections_header">Partners</h2>
             <hr class="program_underline">
             <div class="partners">
                 <img class="partners_logo" src="./images/partner-1.webp" alt="logo of samsara"></img>
@@ -64,5 +98,6 @@
             <p>2023 World Internet of Things Summit. All Rights Reserved. World Internet of things Summit is part of a global IoT organization.</p>
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>
