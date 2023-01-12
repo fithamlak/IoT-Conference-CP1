@@ -396,6 +396,15 @@ a {
   background-color: #272a31;
 }
 
+.bottom_footer_home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5%;
+}
+
 .logo_of_footer {
   display: inline-block;
   width: 30%;
@@ -404,6 +413,11 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   margin-right: 40px;
+}
+
+.bottom_footer_home p {
+  color: black;
+  width: 60%;
 }
 
 .bottom_footer p {
